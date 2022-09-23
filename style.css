@@ -1,0 +1,235 @@
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+:root {
+  font-size: 62.5%;
+}
+
+.hide {
+  display: none;
+}
+
+.page,
+.sounds {
+  display: grid;
+  grid-template-columns: 1fr 1fr;
+}
+
+.page {
+  place-items: center;
+
+  min-height: 100vh;
+  max-width: 80rem;
+
+  margin: auto;
+
+  color: #323238;
+  font-family: 'Roboto', sans-serif;
+  font-size: clamp(4rem, 4rem + 10vw, 8.8rem);
+}
+
+button {
+  border: none;
+  cursor: pointer;
+}
+
+.light-icon {
+  position: absolute;
+  right: 3rem;
+  top: 3rem;
+}
+
+.light-icon:hover svg path {
+  opacity: 0.5;
+}
+
+.controls button:hover svg path {
+  fill: #02799d;
+  transition: 0.5s;
+}
+
+.sounds {
+  gap: 3.2rem;
+}
+
+.sounds button {
+  background-color: #cacace;
+
+  border-radius: 2.4rem;
+
+  width: 13.8rem;
+  height: 15.2rem;
+}
+
+.sounds button:hover,
+.sounds button:focus {
+  background-color: #02799d;
+  transition: 0.5s;
+}
+
+.sounds button:hover svg path,
+.sounds button:focus svg path {
+  fill: white;
+  transition: 0.5s;
+}
+
+/* VOLUME - INPUT */
+
+.sounds button:hover input[type='range'],
+.sounds button:focus input[type='range'] {
+  background: rgba(255, 255, 255, 0.4);
+  background-image: linear-gradient(white, white);
+  background-size: 50% 100%;
+  background-repeat: no-repeat;
+}
+
+.sounds button:hover input[type='range']::-webkit-slider-thumb,
+.sounds button:focus input[type='range']::-webkit-slider-thumb {
+  background: white;
+}
+
+.sounds button:hover input[type='range']::-moz-range-thumb,
+.sounds button:focus input[type='range']::-moz-range-thumb {
+  background: white;
+}
+
+.sounds button:hover input[type='range']::-ms-thumb,
+.sounds button:focus input[type='range']::-ms-thumb {
+  background: white;
+}
+
+input[type='range']:focus {
+  box-shadow: 0 0 1px 1px #4b81dd86;
+  outline: none;
+}
+
+input[type='range'] {
+  -webkit-appearance: none; /* esconde o slider para conseguir editar o slider */
+  margin-top: 3.2rem;
+  width: 9rem;
+  height: 0.4rem;
+  background: rgba(153, 153, 153, 0.6); /* cor que fica depois da bolinha */
+  border-radius: 0.5rem;
+  background-image: linear-gradient(
+    #323238,
+    #323238
+  ); /* Para conseguir fazer a cor antes e depois(^) da bolinha */
+  background-size: 50% 100%;
+  background-repeat: no-repeat;
+}
+
+/* Input Thumb - Bolinha/Dedão/Arrastador */
+
+/* Estilos para webKit/Blink */
+input[type='range']::-webkit-slider-thumb {
+  -webkit-appearance: none;
+  height: 2rem;
+  width: 2rem;
+  border-radius: 50%;
+  background: #323238;
+  cursor: ew-resize; /* seta scroll horizontal */
+  box-shadow: 0 0 0.2rem 0 #555;
+  transition: background 0.3s ease-in-out;
+}
+
+/* Estilos para Firefox */
+input[type='range']::-moz-range-thumb {
+  -webkit-appearance: none;
+  height: 2rem;
+  width: 2rem;
+  border-radius: 50%;
+  background: #323238;
+  cursor: ew-resize;
+  box-shadow: 0 0 0.2rem 0 #555;
+  transition: background 0.3s ease-in-out;
+}
+
+/* Estilos para IE */
+input[type='range']::-ms-thumb {
+  -webkit-appearance: none;
+  height: 2rem;
+  width: 2rem;
+  border-radius: 50%;
+  background: #323238;
+  cursor: ew-resize;
+  box-shadow: 0 0 0.2rem 0 #555;
+  transition: background 0.3s ease-in-out;
+}
+
+/* input[type='range']::-webkit-slider-thumb:hover 
+como fazer o hover na bolinha ^ */
+
+/* Input Track */
+input[type='range']::-webkit-slider-runnable-track {
+  /* V esconde o slider para conseguir adicionar os estilos V */
+  -webkit-appearance: none;
+  box-shadow: none;
+  border: none;
+  background: transparent;
+}
+
+input[type='range']::-moz-range-track {
+  -webkit-appearance: none;
+  box-shadow: none;
+  border: none;
+  background: transparent;
+}
+
+input[type='range']::-ms-track {
+  -webkit-appearance: none;
+  box-shadow: none;
+  border: none;
+  background: transparent;
+}
+
+/* ********** DARK MODE ************* */
+
+.dark-mode {
+  background-color: #121214;
+}
+
+.dark-mode .page {
+  color: white;
+}
+
+.dark-mode .controls button,
+.dark-mode .light-icon {
+  background: none;
+}
+
+.dark-mode button svg path {
+  fill: white;
+}
+
+.dark-mode .sounds button {
+  background-color: #29292e;
+}
+
+.dark-mode .sounds button:hover,
+.dark-mode .sounds button:focus {
+  background-color: #0a3442;
+}
+
+/* VOLUME */
+
+.dark-mode input[type='range'] {
+  background: rgba(255, 255, 255, 0.4);
+  background-image: linear-gradient(white, white);
+  background-size: 50% 100%;
+  background-repeat: no-repeat;
+}
+
+.dark-mode input[type='range']::-webkit-slider-thumb {
+  background: white;
+}
+
+.dark-mode input[type='range']::-moz-range-thumb {
+  background: white;
+}
+
+.dark-mode input[type='range']::-ms-thumb {
+  background: white;
+}
