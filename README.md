@@ -9,7 +9,7 @@ Página desenvolvida para utilizar um Timer onde é possível determinar o tempo
 
 🇺🇸
 <br>
-A page where you can determine the time and choose a background sound. It has the functionality of using a dark theme and controlling the sound volume in the timer interface.
+Page developed to use a timer, where you can determine the time and choose a background sound. It has the functionality of using a dark theme and controlling the sound volume in the timer interface.
 <br>
 
 ## 🚀 Tecnologias
