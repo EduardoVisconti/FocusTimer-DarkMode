@@ -16,7 +16,7 @@ FocusTimer is a Pomodoro timer with additional features like Dark Mode and adjus
 
 To run this project locally, follow these steps:
 
-1. Clone the repository: `git clone https://github.com/EduardoVisconti/FocusTimer-DarkMode.git`
+1. Clone the repository: `git clone https://github.com/yourusername/FocusTimer.git`
 2. Navigate to the project directory: `cd FocusTimer`
 3. Open `index.html` in your preferred web browser.
 
