@@ -23,6 +23,7 @@ const buttonDecrease = document.querySelector('.minus')
 const minutesDisplay = document.querySelector('.minutes')
 const secondsDisplay = document.querySelector('.seconds')
 
+let timerRunning = false
 let timerTimeOut
 let minutes = Number(minutesDisplay.textContent)
 
@@ -63,19 +64,23 @@ function resetTimer() {
 
 /* TIMER CONTROL */
 buttonPlay.addEventListener('click', function () {
-  countdown()
+  if(!timerRunning) {
+    countdown() 
+    timerRunning = true
+  }
 })
 
 buttonStop.addEventListener('click', function () {
   resetTimer()
+  timerRunning = false
 })
 
 buttonIncrease.addEventListener('click', function () {
   let minutes = (minutesDisplay.textContent =
     Number(minutesDisplay.textContent) + 5)
 
-  if (minutes >= 60) {
-    minutes = 60
+  if (minutes >= 59) {
+    minutes = 59
   }
 
   minutesDisplay.textContent = String(minutes).padStart(2, '0')
