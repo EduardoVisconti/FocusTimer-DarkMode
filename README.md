@@ -1,29 +1,41 @@
-# [FocusTimer (DarkMode)](https://eduardovisconti.github.io/FocusTimer-DarkMode/)
+# FocusTimer
 
-<br>
+FocusTimer is a Pomodoro timer with additional features like Dark Mode and adjustable sound volumes. This project is a simple web-based application designed to help users manage their time more effectively during work or study sessions.
 
-🇧🇷
-<br>
-Página desenvolvida para utilizar um Timer onde é possível determinar o tempo e escolher um som de plano de fundo. Nele foram implementadas as funcionalidades de usar um tema escuro e poder controlar o volume do som na interface do Timer.
-<br>
+![FocusTimer Screenshot](screenshot.png)
 
-🇺🇸
-<br>
-Page developed to use a timer, where you can determine the time and choose a background sound. It has the functionality of using a dark theme and controlling the sound volume in the timer interface.
-<br>
+## Features
 
-## 🚀 Tecnologias
-Durante o desenvolvimento do projeto foram utilizadas as seguintes tecnologias:
-* HTML
-* CSS
-* JavaScript
+- **Dark Mode**: Toggle between Dark Mode and Light Mode for different visual preferences.
+- **Timer Control**: Start, stop, increase, and decrease the timer duration with corresponding buttons.
+- **Sound Selection**: Choose from a variety of ambient sounds like nature, rain, coffee shop, and fireplace.
+- **Volume Control**: Adjust the volume of each sound using sliders.
+- **Responsive Design**: Works seamlessly on both desktop and mobile devices.
 
-<br>
+## Getting Started
 
-## 📚 Bibliotecas
-* [Google Fonts](https://fonts.google.com/)
+To run this project locally, follow these steps:
 
-<br>
+1. Clone the repository: `git clone https://github.com/EduardoVisconti/FocusTimer-DarkMode.git`
+2. Navigate to the project directory: `cd FocusTimer`
+3. Open `index.html` in your preferred web browser.
 
-## 📚 Autor
-<a href="https://www.linkedin.com/in/eduardo-visconti/" target="_blank"><img align="left" src="https://raw.githubusercontent.com/yushi1007/yushi1007/main/images/linkedin.svg" alt="" width="21px"/></a>
+## Usage
+
+1. Start the timer by clicking the "Play" button.
+2. Stop the timer at any point by clicking the "Stop" button.
+3. Adjust the timer duration using the "+" and "-" buttons.
+4. Select an ambient sound from the available options and control its volume.
+5. Enjoy focused work or study sessions with calming background sounds.
+
+## Contributing
+
+Contributions are welcome! If you have any ideas for improvements or new features, feel free to submit a pull request. Please make sure to follow the [contributing guidelines](CONTRIBUTING.md).
+
+## License
+
+This project is licensed under the MIT License - see the [LICENSE](LICENSE) file for details.
+
+---
+
+Created with ❤️ by [Eduardo Visconti](https://github.com/EduardoVisconti)
