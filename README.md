@@ -2,7 +2,8 @@
 
 FocusTimer is a Pomodoro timer with additional features like Dark Mode and adjustable sound volumes. This project is a simple web-based application designed to help users manage their time more effectively during work or study sessions.
 
-![FocusTimer Screenshot](screenshot.png)
+![FocusTimer Bright](https://i.imgur.com/mECTc19.jpg)
+![FocusTimer Dark](https://i.imgur.com/ylEceb9.jpg)
 
 ## Features
 
