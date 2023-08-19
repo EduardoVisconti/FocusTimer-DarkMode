@@ -13,6 +13,15 @@ FocusTimer is a Pomodoro timer with additional features like Dark Mode and adjus
 - **Volume Control**: Adjust the volume of each sound using sliders.
 - **Responsive Design**: Works seamlessly on both desktop and mobile devices.
 
+## Technologies Used
+
+- HTML
+- CSS
+- JavaScript
+- SVG
+- Google Fonts
+- Notion (for layout sharing and collaboration)
+
 ## Getting Started
 
 To run this project locally, follow these steps:
